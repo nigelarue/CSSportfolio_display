@@ -1,0 +1,51 @@
+body {
+ background-color: black;
+}
+
+.header {
+ font-family: 'Merriweather', serif;
+ font-size: 25px;
+ color: rosybrown;
+ 
+}
+
+.container {
+ display: flex;
+ flex-direction: column;
+ border: 5px solid #a58fbb;
+}
+
+.parent {
+ position: relative;
+ top: 0;
+ left: 0;
+ font-family: 'merriweather', serif;
+ color: khaki;
+}
+
+.minimoon1 {
+ position: relative;
+ top: 0;
+ left: 0;
+ border: 1px solid #000000;
+}
+/* 
+div {
+ display: flex;
+ justify-content: center;
+ padding: auto;
+} */
+
+.minimoon1 {
+ margin: 100px;
+}
+
+.minimoon2 {
+ margin-top: 20px;
+ margin-left: 100px;
+}
+
+.minimoon3 {
+ align-items: flex-end;
+ 
+}
