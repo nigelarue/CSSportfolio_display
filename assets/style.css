@@ -34,21 +34,34 @@ nav a:hover {
 }
 
 .about_cards_wrap {
+    position: relative;
     float: left;
-    width: 25%;
+    width: 35%;
     margin: 30px;
     background: #fff;
     border-radius: 20px;
     padding: 35px 35px;
     align-items: center;
-    min-width: 225px;
-    min-height: 500px;    
+    min-width: 500px;
+    min-height: 700px;  
+    opacity: 0.5;  
+}
+
+.about_cards_wrap:hover {
+    opacity: 1.0;
+    box-shadow: 0 10px 20px rgba(209, 86, 250, 0.4);
 }
 
 .about_card_inner {
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.about_card_inner img {
+    border-radius: 50%;
+    max-width: 500px;
+    max-height: 500px;
 }
 
 .landingzone {
@@ -101,7 +114,7 @@ nav a:hover {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-weight: 900;
+  font-weight: 900; 
 }
 
 .date_cards_wrap {
@@ -117,7 +130,7 @@ nav a:hover {
 }
 
 
-.date_cards_wrap,
+.date_cards_item,
 .date_card_item {
   padding: 15px 25px;
   max-width: 500px;
@@ -132,7 +145,7 @@ nav a:hover {
   margin: 5px;
 }
 
-img {
+.card_inner img {
   width: 100%;
   margin-bottom: 5px;
   max-width: 500px;
@@ -141,20 +154,42 @@ img {
   opacity: 0.5;
 }
 
-img:hover {
+.card_inner img:hover {
     opacity: 1.0;
     box-shadow: 0 10px 20px rgba(209, 86, 250, 0.4);
 }
 
-/* .cards_wrap .card_inner .my_name{
- color: #e36686;
- font-weight: 900;
- letter-spacing: 2px;
- text-transform: uppercase;
- font-size: 20px;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
+.bottom_content {
+    display: block;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+  }
+
+.bottom_cards_wrap {
+    display: inline-flex;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 2%;
+    margin-left: 3.5%;
+    text-align: center;
+    justify-self: center;
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px 20px;
+    min-width: 300px;
+    min-height: 500px;
+}
+
+/* #resume,
+#contactMe {
+
+    float: left;
+    color: #e36686;
+    letter-spacing: 2px;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 } */
 
 .cards_wrap .card_inner .my_contactInfo {
