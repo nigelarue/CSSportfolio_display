@@ -1,4 +1,3 @@
-
 /* Global Formatting */
 * {
   margin: 0;
@@ -11,57 +10,66 @@ body {
   font-family: "Merriweather", serif;
 }
 nav a {
-    color: unset;
-    text-decoration: none;
-    color: rosybrown;
-    padding: 14px 16px;
+  color: unset;
+  text-decoration: none;
+  color: rosybrown;
+  padding: 14px 16px;
 }
 
 nav a:hover {
-    color: #fff;
-    text-shadow: 0 10px 20px rgba(215, 96, 255, 0.706);
+  color: #fff;
+  font-size: 45px;
+  text-shadow: 0 10px 20px rgba(215, 96, 255, 0.706);
 }
-.navbar_menu, nav {
-    text-align: center;
-    font-size: 32px;
-    margin: 20px;
-    line-height: 25px;
-    border: none;
-    outline: none;
-    padding: .5rem 0rem;
-    background-color: #946161;
-    cursor: pointer;
+
+.navbar_menu,
+nav {
+  text-align: center;
+  font-size: 32px;
+  margin: 20px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0rem;
+  background-color: #946161;
+  cursor: pointer;
 }
 
 .about_cards_wrap {
-    position: relative;
-    float: left;
-    width: 35%;
-    margin: 30px;
-    background: #fff;
-    border-radius: 20px;
-    padding: 35px 35px;
-    align-items: center;
-    min-width: 500px;
-    min-height: 700px;  
-    opacity: 0.5;  
+  position: relative;
+  float: left;
+  width: 35%;
+  margin: 30px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px 35px;
+  align-items: center;
+  min-width: 500px;
+  min-height: 700px;
+  opacity: 0.5;
 }
 
 .about_cards_wrap:hover {
-    opacity: 1.0;
-    box-shadow: 0 10px 20px rgba(209, 86, 250, 0.4);
+  opacity: 1;
+  box-shadow: 0 10px 20px rgba(209, 86, 250, 0.4);
 }
 
 .about_card_inner {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .about_card_inner img {
-    border-radius: 50%;
-    max-width: 500px;
-    max-height: 500px;
+  border-radius: 50%;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.about_card_inner h1 {
+  font-size: 30px;
 }
 
 .landingzone {
@@ -93,7 +101,7 @@ nav a:hover {
 .main_content {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .cards_wrap {
@@ -105,6 +113,12 @@ nav a:hover {
   padding: 35px 20px;
   min-width: 225px;
   min-height: 315px;
+  opacity: 0.5;
+}
+
+.cards_wrap:hover {
+    opacity: 1.0;
+    box-shadow: 0 10px 20px rgba(209, 86, 250, 0.4);
 }
 
 .card_inner {
@@ -113,8 +127,13 @@ nav a:hover {
   align-items: center;
   font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: 900; 
+  letter-spacing: 2.5px;
+  font-weight: 900;
+}
+
+.card_inner a {
+  text-decoration: none;
+  color:rgb(130, 46, 158);
 }
 
 .date_cards_wrap {
@@ -129,7 +148,6 @@ nav a:hover {
   justify-content: center;
 }
 
-
 .date_cards_item,
 .date_card_item {
   padding: 15px 25px;
@@ -139,7 +157,7 @@ nav a:hover {
 }
 
 .my_portfolio {
-  color: #b6c0c2;
+  color: #2f1f32;
   font-size: 12px;
   font-weight: 100;
   margin: 5px;
@@ -155,47 +173,162 @@ nav a:hover {
 }
 
 .card_inner img:hover {
-    opacity: 1.0;
-    box-shadow: 0 10px 20px rgba(209, 86, 250, 0.4);
+  opacity: 1;
+  box-shadow: 0 10px 20px rgba(209, 86, 250, 0.4);
 }
 
 .bottom_content {
-    display: block;
-    flex-wrap: nowrap;
-    justify-content:space-around;
-  }
-
-.bottom_cards_wrap {
-    display: inline-flex;
-    box-sizing: border-box;
-    width: 90%;
-    margin: 2%;
-    margin-left: 3.5%;
-    text-align: center;
-    justify-self: center;
-    background: #fff;
-    border-radius: 20px;
-    padding: 35px 20px;
-    min-width: 300px;
-    min-height: 500px;
+  display: block;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
-/* #resume,
-#contactMe {
+.bottom_cards_wrap {
+  display: inline-flex;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 2%;
+  margin-left: 3.5%;
+  color: #946161;
+  justify-self: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px 20px;
+  max-height: 550px;
+  min-width: 300px;
+  min-height: 500px;
 
-    float: left;
-    color: #e36686;
-    letter-spacing: 2px;
-    font-size: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-} */
+  opacity: 0.5;
+}
 
-.cards_wrap .card_inner .my_contactInfo {
-  font-size: 14px;
-  line-height: 24px;
-  color: #7b8ca0;
+.bottom_cards_wrap:hover {
+  opacity: 1;
+  box-shadow: 0 10px 20px rgba(209, 86, 250, 0.4);
+  color: #523535;
+}
+
+.resume_left_container {
+  display: flex;
+  width: 100%;
+  margin: 15px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 0 0 0 30px;
+  max-width: 900px;
+  height: 200px;
+  min-width: 300px;
+  min-height: 200px;
+}
+
+.resume_card_inner {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px;
+}
+
+.resume_left_img {
+  display: inline-flex;
+  flex-direction: row;
+  align-self: center;
+  margin: 30px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.resume_right_img {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 8;
+  right: 5;
+  width: 40%;
+  height: 50%;
+}
+
+.resume_right_img {
+  visibility: visible;
+  opacity: 0;
+}
+
+.resume_right_img:hover {
+  overflow: scroll;
+  width: 55%;
+
+  opacity: 1;
+}
+
+.contact_cards_wrap {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Saturn_during_Equinox.jpg/1920px-Saturn_during_Equinox.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  margin: 2%;
+  color: #fff;
+  justify-self: center;
+  border-radius: 20px;
+  padding: 35px 20px;
+  max-width: 35%;
+  max-height: 25%;
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.expand-btn {
+  font-family: "Merriweather", serif;
+  letter-spacing: 2.5px;
+  margin-left: 4.5rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #946161;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.expand-btn:hover {
+  opacity: 1;
+  box-shadow: 0 15px 20px rgba(209, 86, 250, 0.4);
+}
+
+.contact_cards_wrap {
+  display: none;
+  margin-top: 20px;
+}
+
+.show {
+  display: block;
+}
+
+.contact_right {
+  display: grid;
+  grid-column: 1fr 1fr;
+  max-width: 600px;
+  max-height: 300px;
+  min-width: 700px;
+  min-height: 300px;
+  text-align: end;
+}
+
+.contact_right a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffff;
+}
+
+.contact_right a:hover {
+  font-size: 32px;
+  text-shadow: 0 10px 20px rgba(215, 96, 255, 0.706);
+  cursor: pointer;
 }
 
 .header {
