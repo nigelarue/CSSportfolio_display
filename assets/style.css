@@ -6,33 +6,44 @@
 }
 
 body {
-  background: rosybrown;
-  font-family: "Merriweather", serif;
+  background-image: url('../assets/images/natures-elegance-vibrant-floral-pattern-generative-ai.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* background: rgb(245, 243, 243); */
+  /* font-family: 'Nunito', sans-serif; */
 }
 nav a {
   color: unset;
   text-decoration: none;
-  color: rosybrown;
+  color: rgb(239, 194, 17);
   padding: 14px 16px;
 }
 
 nav a:hover {
-  color: #fff;
+  color: #002633;
   font-size: 45px;
-  text-shadow: 0 10px 20px rgba(215, 96, 255, 0.706);
+  text-shadow: 0px 10px 20px rgb(255, 251, 0);
 }
 
 .navbar_menu,
 nav {
+  font-family: 'Freckle Face', cursive;
+
   text-align: center;
   font-size: 32px;
   line-height: 25px;
   border: none;
   outline: none;
   padding: 0.5rem 0.5rem;
-  background-color: #946161;
+  background-color: rgba(245, 243, 243, 0);
   cursor: pointer;
   flex-shrink: inherit;
+}
+
+h1 {
+  font-family: 'Freckle Face', cursive;
+  color: darkgoldenrod;
 }
 
 .about_cards_wrap {
@@ -54,7 +65,7 @@ nav {
 
 .about_cards_wrap:hover {
   opacity: 1;
-  box-shadow: 0 10px 20px rgba(209, 86, 250, 0.4);
+  box-shadow: 0 10px 20px rgba(255, 251, 0.4);
 }
 
 .about_card_inner {
@@ -76,7 +87,7 @@ nav {
 }
 
 .landingzone {
-  color: rgb(148, 97, 97);
+  color: rgb(26, 82, 159);
   width: 100%;
   font-size: 32px;
   padding: 3rem 1.5rem;
@@ -122,7 +133,7 @@ nav {
 .cards_wrap:hover {
   opacity: 1;
   flex-grow: 5;
-  box-shadow: 0 10px 20px rgba(209, 86, 250, 0.4);
+  box-shadow: 0 10px 20px rgba(255, 251, 0.4);
 }
 
 .card_inner {
@@ -130,8 +141,8 @@ nav {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
+
+  letter-spacing: 1.5px;
   font-weight: 900;
 }
 
